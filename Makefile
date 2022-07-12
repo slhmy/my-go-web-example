@@ -1,6 +1,6 @@
-NAME ?= pingpong 
+ODIR = bin
 
-bin/$(NAME): $(NAME)
+$(ODIR)/%: %
 	cd $< && go build -o ../bin/
 
 clean:
