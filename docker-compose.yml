@@ -28,7 +28,7 @@ services:
     image: rabbitmq
     restart: always
     ports:
-      - 15672:15672
+      - 5672:5672
 
   zookeeper:
     image: bitnami/zookeeper
